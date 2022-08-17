@@ -11,7 +11,7 @@ public class Lateral extends Jogador{
         super(nome,idade,clubeAtual,reputacaoHistorica,apetiteFinanceiro,preco);
     }
 
-
+    @Override
     public double getValorDeMercado() {
         // RN14: o cálculo do valor de compra do lateral tem um acréscimo de 2% para cada cruzamento certeiro calculado sobre o valor do calculo padrão (RN06).
         // RN15: o cálculo do valor de compra do lateral tem um desconto de 30% sobre o valor calculado com os acréscimos da RN14, mas apenas para atletas com mais de 28 anos. (Primeiro contrato da historia onde o cara recebe menos por jogar melhor)

@@ -104,7 +104,7 @@ public class Jogador {
 
     // RN04: o jogador deve possuir um método que, dado um clube de entrada, retorne uma informação que determine se o jogador possui interesse em ser transferido para o clube em questão e, por padrão, o jogador só deve estar interessado em jogar por um clube que tenha uma reputação histórica de, no mínimo, 1 ponto.
     public boolean interesseEmSerVendidoParaOClube(Clube clube) {
-        if (clube.reputacaoHistorica > 1) {
+        if (clube.getReputacaoHistorica() > 1) {
             return true;
         }
         return false;

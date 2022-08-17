@@ -2,9 +2,9 @@ package clube;
 
 public class Clube {
 
-    public String nome;
-    public int reputacaoHistorica;
-    public double saldoDisponivel;
+    private String nome;
+    private int reputacaoHistorica;
+    protected double saldoDisponivel;
 
     public Clube (String nome, int reputacaoHistorica, double saldoDisponivel){
         this.nome = nome;

@@ -12,8 +12,10 @@ public class Goleiro extends Jogador{
         this.quantidadeDePenaltisDefendidos = quantidadeDePenaltisDefendidos;
     }
 
-    // RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
+
+    @Override
     public double getValorDeMercado() {
+        // RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
         return this.getPrecoComBonusDeApetiteFinanceiro() + (quantidadeDePenaltisDefendidos*4*getPrecoComBonusDeApetiteFinanceiro()/100);
     }
 

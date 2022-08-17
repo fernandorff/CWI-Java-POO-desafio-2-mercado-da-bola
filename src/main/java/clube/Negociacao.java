@@ -1,4 +1,4 @@
-package negociacao;
+package clube;
 
 import jogador.Jogador;
 import clube.Clube;

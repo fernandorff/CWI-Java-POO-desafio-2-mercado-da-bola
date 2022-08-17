@@ -2,9 +2,8 @@ import clube.Clube;
 import jogador.Goleiro;
 import jogador.Zagueiro;
 import jogador.Atacante;
-import jogador.Lateral;
 import jogador.MeioCampo;
-import negociacao.Negociacao;
+import clube.Negociacao;
 import org.junit.Assert;
 import org.junit.Test;
 
