@@ -19,7 +19,7 @@ _Regras de Negócio do Jogador_
 
 RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
 
-**(IMPLEMENTADO)** RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
+**(IMPLEMENTADO)** :heavy_check_mark: RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
 
 RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São eles:
 
@@ -31,7 +31,7 @@ RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São ele
 
 RN04: o jogador deve possuir um método que, dado um clube de entrada, retorne uma informação que determine se o jogador possui interesse em ser transferido para o clube em questão e, por padrão, o jogador só deve estar interessado em jogar por um clube que tenha uma reputação histórica de, no mínimo, 1 ponto.
 
-**(IMPLEMENTADO)** RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
+**(IMPLEMENTADO)** :heavy_check_mark: RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
 
 RN07: o jogador deve possuir um método para transferencia de clube que, por consequencia, irá atualizar seu clube atual.
 
