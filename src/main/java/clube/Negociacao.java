@@ -1,20 +1,13 @@
 package clube;
 
 import jogador.Jogador;
-import clube.Clube;
 
 public class Negociacao {
 
     // RN20: na negociação deve ser verificado se o jogador possui interesse em jogar pelo clube ofertante.
     // RN21: na negociação deve ser verificado se o clube tem como pagar o valor de compra do jogador.
     public boolean negociar(Clube clubeInteressado, Jogador jogadorDeInteresse){
-        if(clubeInteressado.getSaldoDisponivel() >= jogadorDeInteresse.getValorDeMercado()){
-            if (jogadorDeInteresse.interesseEmSerVendidoParaOClube(clubeInteressado)){
-                return true;
-            }
-
-        }
-        return false;
+        return (clubeInteressado.getSaldoDisponivel() >= jogadorDeInteresse.getValorDeMercado()) && jogadorDeInteresse.interesseEmSerVendidoParaOClube(clubeInteressado);
     }
 
     public void transferir(Clube clubeComprador, Jogador jogadorVendido){

@@ -18,13 +18,10 @@ public class MeioCampo extends Jogador{
 
     }
 
+    @Override
     public boolean interesseEmSerVendidoParaOClube(Clube clube) {
         // RN12: meio-campista tem interesse em mudar de clube somente quando a reputação histórica do time é, no minimo, 2 pontos menores que a sua. (Sim, só aceita trocar pra um time pior, por algum motivo)
-        if (clube.getReputacaoHistorica() <= (this.getReputacaoHistorica() - 2)) {
-            return true;
-        }
-        return false;
-
+        return  (clube.getReputacaoHistorica() <= (this.getReputacaoHistorica() - 2));
     }
 
 }

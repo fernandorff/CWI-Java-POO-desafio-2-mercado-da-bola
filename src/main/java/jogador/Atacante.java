@@ -23,6 +23,7 @@ public class Atacante extends Jogador{
 
     }
 
+    @Override
     public boolean interesseEmSerVendidoParaOClube(Clube clube) {
         // RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
         return (clube.getReputacaoHistorica() > this.getReputacaoHistorica());
