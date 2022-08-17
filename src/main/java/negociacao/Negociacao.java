@@ -18,10 +18,11 @@ public class Negociacao {
     }
 
     public void transferir(Clube clubeComprador, Jogador jogadorVendido){
-        // RN22: a transferencia de clube do jogador deve ocorrer na **Negociacao**, desde que as RN20 e RN21 sejam positivas.
 
+        // RN22: a transferencia de clube do jogador deve ocorrer na **Negociacao**, desde que as RN20 e RN21 sejam positivas.
         if (negociar(clubeComprador,jogadorVendido)){
             jogadorVendido.setClubeAtual(clubeComprador);
+
             // RN23: se efetuada a trasnferência, o saldo disponível em caixa do clube deve ser atualizado.
             clubeComprador.saldoDisponivel -= jogadorVendido.getValorDeMercado();
         }
