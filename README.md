@@ -63,7 +63,7 @@ _Regras de Negócio do Meio-Campo_
 
 :white_check_mark: RN11: o cálculo do valor de compra do meio-campo tem um desconto de 30% sobre o valor do calculo padrão (RN06), mas apenas para atletas com mais de 30 anos.
 
-RN12: meio-campista tem interesse em mudar de clube somente quando a reputação histórica do time é, no minimo, 2 pontos menores que a sua. (Sim, só aceita trocar pra um time pior, por algum motivo)
+:white_check_mark: RN12: meio-campista tem interesse em mudar de clube somente quando a reputação histórica do time é, no minimo, 2 pontos menores que a sua. (Sim, só aceita trocar pra um time pior, por algum motivo)
 
 ##### Lateral
 
@@ -89,7 +89,7 @@ _Regras de Negócio do Atacante_
 
 :white_check_mark: RN18: o cálculo do valor de compra do atacante tem um desconto de 25% sobre o valor do calculado e com os acréscimos (RN18), mas apenas para atletas com mais de 30 anos.
 
-RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
+:white_check_mark: RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
 
 ### Negociacao
 
