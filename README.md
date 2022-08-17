@@ -19,7 +19,7 @@ _Regras de Negócio do Jogador_
 
 RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
 
-RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
+<span style="color:blue">RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).</span>.
 
 RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São eles:
 
