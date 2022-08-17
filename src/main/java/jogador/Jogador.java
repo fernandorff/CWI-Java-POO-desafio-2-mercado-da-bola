@@ -14,6 +14,7 @@ public class Jogador {
     Clube semClube = new Clube("_Sem Clube_", 0, 0);
 
     public Jogador(String nome, int idade, Clube clubeAtual, int reputacaoHistorica, int apetiteFinanceiro, int preco) {
+
         this.nome = nome;
         this.idade = idade;
         this.preco = preco;
@@ -21,7 +22,6 @@ public class Jogador {
         // RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
         if (clubeAtual == null) {
             this.clubeAtual = semClube;
-
         } else {
             this.clubeAtual = clubeAtual;
         }
@@ -41,7 +41,6 @@ public class Jogador {
         else{
             this.reputacaoHistorica = reputacaoHistorica;
         }
-
 
     }
 

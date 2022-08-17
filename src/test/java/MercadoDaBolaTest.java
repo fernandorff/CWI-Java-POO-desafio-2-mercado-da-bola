@@ -1,9 +1,6 @@
 import clube.Clube;
 import clube.Negociacao;
-import jogador.Atacante;
-import jogador.Goleiro;
-import jogador.MeioCampo;
-import jogador.Zagueiro;
+import jogador.*;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -20,7 +17,7 @@ public class MercadoDaBolaTest {
 
         boolean foiPossivelNegociar = negociacao.negociar(clube, goleiro);
 
-        Assert.assertEquals(true, foiPossivelNegociar);
+        Assert.assertTrue(foiPossivelNegociar);
 
     }
 
@@ -35,7 +32,7 @@ public class MercadoDaBolaTest {
 
         boolean foiPossivelNegociar = negociacao.negociar(clube, atacante);
 
-        Assert.assertEquals(false, foiPossivelNegociar);
+        Assert.assertFalse(foiPossivelNegociar);
 
     }
 
@@ -50,7 +47,7 @@ public class MercadoDaBolaTest {
 
         boolean foiPossivelNegociar = negociacao.negociar(clube, zagueiro);
 
-        Assert.assertEquals(false, foiPossivelNegociar);
+        Assert.assertFalse(foiPossivelNegociar);
 
     }
 
@@ -68,8 +65,32 @@ public class MercadoDaBolaTest {
 
         MeioCampo kaka = new MeioCampo("Kaka", 35, null, 6, 0, 1000);
 
+        MeioCampo kiki = new MeioCampo("Kiki", 35, null, 6, 0, 2000);
+
         Assert.assertEquals(700, kaka.getValorDeMercado(), 0.01);
+        Assert.assertEquals(1400, kiki.getValorDeMercado(), 0.01);
 
     }
+
+    @Test
+    public void clubeTest(){
+
+        Clube clube = new Clube("Vasco",6,10000);
+
+        clube.setNome("Flamengo");
+
+        Assert.assertEquals("Flamengo",clube.getNome());
+
+        clube.setReputacaoHistorica(8);
+
+        Assert.assertEquals(8,clube.getReputacaoHistorica());
+
+        clube.setSaldoDisponivel(20000);
+
+        Assert.assertEquals(20000,clube.getSaldoDisponivel(),0.01);
+
+    }
+
+
 
 }
