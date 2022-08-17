@@ -97,19 +97,19 @@ Esta **será a classe central** da solução, onde serão feitos todas as verifi
 
 _Regras de Negócio da Negociação_
 
-RN20: na negociação deve ser verificado se o jogador possui interesse em jogar pelo clube ofertante.
+:white_check_mark: RN20: na negociação deve ser verificado se o jogador possui interesse em jogar pelo clube ofertante.
 
-RN21: na negociação deve ser verificado se o clube tem como pagar o valor de compra do jogador.
+:white_check_mark: RN21: na negociação deve ser verificado se o clube tem como pagar o valor de compra do jogador.
 
-RN22: a transferencia de clube do jogador deve ocorrer na **Negociacao**, desde que as RN20 e RN21 sejam positivas.
+:white_check_mark: RN22: a transferencia de clube do jogador deve ocorrer na **Negociacao**, desde que as RN20 e RN21 sejam positivas.
 
-RN23: se efetuada a trasnferência, o saldo disponível em caixa do clube deve ser atualizado.
+:white_check_mark: RN23: se efetuada a trasnferência, o saldo disponível em caixa do clube deve ser atualizado.
 
 ## Regras Gerais
 
-RN24: o unico método público da classe negociação deve ser possuir seguinte assinatura `public boolean negociar(Clube clubeInteressado, Jogador jogadorDeInteresse)`.
+:white_check_mark: RN24: o unico método público da classe negociação deve ser possuir seguinte assinatura `public boolean negociar(Clube clubeInteressado, Jogador jogadorDeInteresse)`.
 
-RN25: de acordo com as regras descritas ao longo do enunciado, o método `negociar` deve retornar _true_ quando foi possível realizar a transferência e _false_ quando não.
+:white_check_mark: RN25: de acordo com as regras descritas ao longo do enunciado, o método `negociar` deve retornar _true_ quando foi possível realizar a transferência e _false_ quando não.
 
 # Exemplos de Testes
 
