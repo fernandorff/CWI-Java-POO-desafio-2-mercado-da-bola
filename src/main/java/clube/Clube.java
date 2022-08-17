@@ -8,8 +8,15 @@ public class Clube {
 
     public Clube (String nome, int reputacaoHistorica, double saldoDisponivel){
         this.nome = nome;
-        this.reputacaoHistorica = reputacaoHistorica;
         this.saldoDisponivel = saldoDisponivel;
+
+        // reputacao historica maxima = 10
+        if (reputacaoHistorica > 10){
+            this.reputacaoHistorica = 10;
+        }
+        else{
+            this.reputacaoHistorica = reputacaoHistorica;
+        }
     }
 
     public String getNome() {

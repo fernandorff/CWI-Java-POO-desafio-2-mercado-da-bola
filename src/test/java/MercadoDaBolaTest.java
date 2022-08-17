@@ -96,9 +96,26 @@ public class MercadoDaBolaTest {
 
         Lateral lateral = new Lateral("Roberto Carlos",31,null,5,1,1000,10);
 
-
         Assert.assertEquals(1176,lateral.getValorDeMercado(),0.01);
     }
+
+    @Test
+    public void jogadorTest(){
+
+        Clube clube = new Clube("Vasco",15,10000);
+
+        Zagueiro zagueiro = new Zagueiro("Cafu", 25, clube,15,9,1000);
+
+        Assert.assertEquals(10,clube.getReputacaoHistorica());
+        Assert.assertEquals(10,zagueiro.getReputacaoHistorica());
+        Assert.assertEquals(2,zagueiro.getApetiteFinanceiro());
+
+
+
+
+    }
+
+
 
 
 

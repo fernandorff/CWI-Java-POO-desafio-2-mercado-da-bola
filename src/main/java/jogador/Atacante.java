@@ -10,7 +10,7 @@ public class Atacante extends Jogador{
 
     public Atacante (String nome, int idade, Clube clubeAtual, int reputacaoHistorica, int apetiteFinanceiro, int preco, int golsMarcadosNoAno){
         super(nome,idade,clubeAtual,reputacaoHistorica,apetiteFinanceiro,preco);
-        this.golsMarcadosNoAno = golsMarcadosNoAno;
+        this.setGolsMarcadosNoAno(golsMarcadosNoAno);
     }
 
     @Override
@@ -28,6 +28,14 @@ public class Atacante extends Jogador{
     public boolean interesseEmSerVendidoParaOClube(Clube clube) {
         // RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
         return (clube.getReputacaoHistorica() > this.getReputacaoHistorica());
+    }
+
+    public int getGolsMarcadosNoAno(){
+        return golsMarcadosNoAno;
+    }
+
+    public void setGolsMarcadosNoAno(int golsMarcadosNoAno){
+        this.golsMarcadosNoAno = golsMarcadosNoAno;
     }
 
 }

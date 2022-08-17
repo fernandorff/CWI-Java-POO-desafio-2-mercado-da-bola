@@ -4,43 +4,22 @@ import clube.Clube;
 
 public class Jogador {
 
+    protected Clube clubeAtual;
+    Clube semClube = new Clube("_Sem Clube_", 0, 0);
     private String nome;
     private int idade;
-    protected Clube clubeAtual;
     private int reputacaoHistorica;
     private int apetiteFinanceiro;
     private double preco;
 
-    Clube semClube = new Clube("_Sem Clube_", 0, 0);
-
     public Jogador(String nome, int idade, Clube clubeAtual, int reputacaoHistorica, int apetiteFinanceiro, int preco) {
 
-        this.nome = nome;
-        this.idade = idade;
-        this.preco = preco;
-
-        // RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
-        if (clubeAtual == null) {
-            this.clubeAtual = semClube;
-        } else {
-            this.clubeAtual = clubeAtual;
-        }
-
-        // apetite financeiro maximo = 2
-        if (apetiteFinanceiro > 2){
-            this.apetiteFinanceiro = 2;
-        }
-        else{
-            this.apetiteFinanceiro = apetiteFinanceiro;
-        }
-
-        // reputacao historica maxima = 10
-        if (reputacaoHistorica > 10){
-            this.reputacaoHistorica = 10;
-        }
-        else{
-            this.reputacaoHistorica = reputacaoHistorica;
-        }
+        this.setNome(nome);
+        this.setIdade(idade);
+        this.setPreco(preco);
+        this.setApetiteFinanceiro(apetiteFinanceiro);
+        this.setReputacaoHistorica(reputacaoHistorica);
+        this.setClubeAtual(clubeAtual);
 
     }
 
@@ -66,7 +45,13 @@ public class Jogador {
     }
 
     public void setReputacaoHistorica(int reputacaoHistorica) {
-        this.reputacaoHistorica = reputacaoHistorica;
+        // reputacao historica maxima = 10
+        if (reputacaoHistorica > 10) {
+            this.reputacaoHistorica = 10;
+        } else {
+            this.reputacaoHistorica = reputacaoHistorica;
+        }
+
     }
 
     public int getApetiteFinanceiro() {
@@ -74,7 +59,13 @@ public class Jogador {
     }
 
     public void setApetiteFinanceiro(int apetiteFinanceiro) {
-        this.apetiteFinanceiro = apetiteFinanceiro;
+        // apetite financeiro maximo = 2
+        if (apetiteFinanceiro > 2) {
+            this.apetiteFinanceiro = 2;
+        } else {
+            this.apetiteFinanceiro = apetiteFinanceiro;
+        }
+
     }
 
     // RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
@@ -97,7 +88,7 @@ public class Jogador {
         return preco + (preco * 0.4 * apetiteFinanceiro);
     }
 
-    public double getValorDeMercado(){
+    public double getValorDeMercado() {
         return getPrecoComBonusDeApetiteFinanceiro();
     }
 
@@ -112,8 +103,13 @@ public class Jogador {
     }
 
     // RN07: o jogador deve possuir um método para transferencia de clube que, por consequencia, irá atualizar seu clube atual.
-    public void setClubeAtual(Clube clube) { this.clubeAtual = clube;
-
+    // RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
+    public void setClubeAtual(Clube clubeAtual) {
+        if (clubeAtual == null) {
+            this.clubeAtual = semClube;
+        } else {
+            this.clubeAtual = clubeAtual;
+        }
     }
 
 

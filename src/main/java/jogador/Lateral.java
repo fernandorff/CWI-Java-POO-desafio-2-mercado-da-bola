@@ -10,7 +10,7 @@ public class Lateral extends Jogador{
 
     public Lateral (String nome, int idade, Clube clubeAtual, int reputacaoHistorica, int apetiteFinanceiro, int preco, int cruzamentosCerteirosNoAno){
         super(nome,idade,clubeAtual,reputacaoHistorica,apetiteFinanceiro,preco);
-        this.cruzamentosCerteirosNoAno = cruzamentosCerteirosNoAno;
+        this.setCruzamentosCerteirosNoAno(cruzamentosCerteirosNoAno);
     }
 
     @Override
@@ -22,6 +22,14 @@ public class Lateral extends Jogador{
         }
         return this.getPrecoComBonusDeApetiteFinanceiro() + (this.getPrecoComBonusDeApetiteFinanceiro()*cruzamentosCerteirosNoAno*2/100);
 
+    }
+
+    public int getCruzamentosCerteirosNoAno(){
+        return cruzamentosCerteirosNoAno;
+    }
+
+    public void setCruzamentosCerteirosNoAno(int cruzamentosCerteirosNoAno){
+        this.cruzamentosCerteirosNoAno = cruzamentosCerteirosNoAno;
     }
 
 }
