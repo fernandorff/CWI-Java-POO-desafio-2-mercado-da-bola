@@ -91,6 +91,15 @@ public class MercadoDaBolaTest {
 
     }
 
+    @Test
+    public void lateralTest(){
+
+        Lateral lateral = new Lateral("Roberto Carlos",31,null,5,1,1000,10);
+
+
+        Assert.assertEquals(1176,lateral.getValorDeMercado(),0.01);
+    }
+
 
 
 }
