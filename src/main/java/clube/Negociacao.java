@@ -8,7 +8,7 @@ public class Negociacao {
     // RN20: na negociação deve ser verificado se o jogador possui interesse em jogar pelo clube ofertante.
     // RN21: na negociação deve ser verificado se o clube tem como pagar o valor de compra do jogador.
     public boolean negociar(Clube clubeInteressado, Jogador jogadorDeInteresse){
-        if(clubeInteressado.saldoDisponivel >= jogadorDeInteresse.getValorDeMercado()){
+        if(clubeInteressado.getSaldoDisponivel() >= jogadorDeInteresse.getValorDeMercado()){
             if (jogadorDeInteresse.interesseEmSerVendidoParaOClube(clubeInteressado)){
                 return true;
             }
