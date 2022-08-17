@@ -103,6 +103,7 @@ public class MercadoDaBolaTest {
         Assert.assertEquals(2,zagueiro.getApetiteFinanceiro());
         Assert.assertEquals("Cafu",zagueiro.getNome());
         Assert.assertEquals(1800,zagueiro.getValorDeMercado(),0.01);
+        Assert.assertEquals(clube,zagueiro.getClubeAtual());
 
         MeioCampo meioCampo = new MeioCampo("Ronaldo",29,null,8,1,1000);
 
@@ -119,6 +120,12 @@ public class MercadoDaBolaTest {
 
         Assert.assertEquals(1680,lateral.getValorDeMercado(),0.01);
         Assert.assertEquals(10,lateral.getCruzamentosCerteirosNoAno());
+
+        Negociacao negociacao = new Negociacao();
+        negociacao.transferir(clube,lateral);
+        System.out.println(clube.getSaldoDisponivel());
+
+        Assert.assertEquals(clube,lateral.getClubeAtual());
 
 
     }

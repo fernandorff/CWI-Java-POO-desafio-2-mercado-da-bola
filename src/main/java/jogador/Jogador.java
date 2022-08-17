@@ -47,12 +47,7 @@ public class Jogador {
 
     public void setReputacaoHistorica(int reputacaoHistorica) {
         // reputacao historica maxima = 10
-        if (reputacaoHistorica > 10) {
-            this.reputacaoHistorica = 10;
-        } else {
-            this.reputacaoHistorica = reputacaoHistorica;
-        }
-
+        this.reputacaoHistorica = Math.min(10,reputacaoHistorica);
     }
 
     public int getApetiteFinanceiro() {
@@ -61,12 +56,7 @@ public class Jogador {
 
     public void setApetiteFinanceiro(int apetiteFinanceiro) {
         // apetite financeiro maximo = 2
-        if (apetiteFinanceiro > 2) {
-            this.apetiteFinanceiro = 2;
-        } else {
-            this.apetiteFinanceiro = apetiteFinanceiro;
-        }
-
+        this.apetiteFinanceiro = Math.min(2,apetiteFinanceiro);
     }
 
     // RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.

@@ -7,16 +7,9 @@ public class Clube {
     protected double saldoDisponivel;
 
     public Clube (String nome, int reputacaoHistorica, double saldoDisponivel){
-        this.nome = nome;
-        this.saldoDisponivel = saldoDisponivel;
-
-        // reputacao historica maxima = 10
-        if (reputacaoHistorica > 10){
-            this.reputacaoHistorica = 10;
-        }
-        else{
-            this.reputacaoHistorica = reputacaoHistorica;
-        }
+        this.setNome(nome);
+        this.setSaldoDisponivel(saldoDisponivel);
+        this.setReputacaoHistorica(reputacaoHistorica);
     }
 
     public String getNome() {
@@ -32,15 +25,16 @@ public class Clube {
     }
 
     public void setReputacaoHistorica(int reputacaoHistorica) {
-        this.reputacaoHistorica = reputacaoHistorica;
+        // reputacao historica maxima = 10
+        this.reputacaoHistorica = Math.min(10,reputacaoHistorica);
     }
 
     public double getSaldoDisponivel() {
         return saldoDisponivel;
     }
 
-    public void setSaldoDisponivel(int novoSaldoDisponivel) {
-        this.saldoDisponivel = novoSaldoDisponivel;
+    public void setSaldoDisponivel(double saldoDisponivel) {
+        this.saldoDisponivel = saldoDisponivel;
     }
 
 
