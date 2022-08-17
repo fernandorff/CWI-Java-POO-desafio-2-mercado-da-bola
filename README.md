@@ -17,9 +17,9 @@ O Jogador deve possuir atributos como: **nome**, **idade**, **clube atual**, **r
 
 _Regras de Negócio do Jogador_
 
-:white_check_mark: RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
+ RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
 
-**(IMPLEMENTADO)** :heavy_check_mark: RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
+:white_check_mark: RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
 
 RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São eles:
 
@@ -31,7 +31,7 @@ RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São ele
 
 RN04: o jogador deve possuir um método que, dado um clube de entrada, retorne uma informação que determine se o jogador possui interesse em ser transferido para o clube em questão e, por padrão, o jogador só deve estar interessado em jogar por um clube que tenha uma reputação histórica de, no mínimo, 1 ponto.
 
-**(IMPLEMENTADO)** :heavy_check_mark: RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
+:white_check_mark: RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
 
 RN07: o jogador deve possuir um método para transferencia de clube que, por consequencia, irá atualizar seu clube atual.
 
@@ -43,9 +43,9 @@ RN07: o jogador deve possuir um método para transferencia de clube que, por con
 
 _Regras de Negócio do Goleiro_
 
-**(IMPLEMENTADO)** - [x] RN08: o goleiro deve possuir a informação da quantidade de penaltis defendidos no ano.
+:white_check_mark: RN08: o goleiro deve possuir a informação da quantidade de penaltis defendidos no ano.
 
-**(IMPLEMENTADO)** - [x] RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
+:white_check_mark: RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
 
 ##### Zagueiro
 
@@ -53,7 +53,7 @@ _Regras de Negócio do Goleiro_
 
 _Regras de Negócio do Zagueiro_
 
-**(IMPLEMENTADO)** RN10: o cálculo do valor de compra do zagueiro tem um desconto de 20% sobre o valor do calculo padrão (RN06), mas apenas para atletas com mais de 30 anos.
+:white_check_mark: RN10: o cálculo do valor de compra do zagueiro tem um desconto de 20% sobre o valor do calculo padrão (RN06), mas apenas para atletas com mais de 30 anos.
 
 ##### Meio-Campo
 
@@ -61,7 +61,7 @@ _Regras de Negócio do Zagueiro_
 
 _Regras de Negócio do Meio-Campo_
 
-**(IMPLEMENTADO)** RN11: o cálculo do valor de compra do meio-campo tem um desconto de 30% sobre o valor do calculo padrão (RN06), mas apenas para atletas com mais de 30 anos.
+:white_check_mark: RN11: o cálculo do valor de compra do meio-campo tem um desconto de 30% sobre o valor do calculo padrão (RN06), mas apenas para atletas com mais de 30 anos.
 
 RN12: meio-campista tem interesse em mudar de clube somente quando a reputação histórica do time é, no minimo, 2 pontos menores que a sua. (Sim, só aceita trocar pra um time pior, por algum motivo)
 
@@ -71,11 +71,11 @@ RN12: meio-campista tem interesse em mudar de clube somente quando a reputação
 
 _Regras de Negócio do Lateral_
 
-RN13: o lateral deve possuir a informação da quantidade de cruzamentos certeiros no ano.
+:white_check_mark: RN13: o lateral deve possuir a informação da quantidade de cruzamentos certeiros no ano.
 
-RN14: o cálculo do valor de compra do lateral tem um acréscimo de 2% para cada cruzamento certeiro calculado sobre o valor do calculo padrão (RN06).
+:white_check_mark: RN14: o cálculo do valor de compra do lateral tem um acréscimo de 2% para cada cruzamento certeiro calculado sobre o valor do calculo padrão (RN06).
 
-RN15: o cálculo do valor de compra do lateral tem um desconto de 30% sobre o valor calculado com os acréscimos da RN14, mas apenas para atletas com mais de 28 anos. (Primeiro contrato da historia onde o cara recebe menos por jogar melhor)
+:white_check_mark: RN15: o cálculo do valor de compra do lateral tem um desconto de 30% sobre o valor calculado com os acréscimos da RN14, mas apenas para atletas com mais de 28 anos. (Primeiro contrato da historia onde o cara recebe menos por jogar melhor)
 
 ##### Atacante
 
