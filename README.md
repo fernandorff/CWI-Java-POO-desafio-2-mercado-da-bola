@@ -17,23 +17,23 @@ O Jogador deve possuir atributos como: **nome**, **idade**, **clube atual**, **r
 
 _Regras de Negócio do Jogador_
 
- RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
+:white_check_mark: RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
 
 :white_check_mark: RN02: a reputação histórica do atleta deve estar em uma faixa de zero (baixa reputatação) à dez (alta reputação).
 
-RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São eles:
+:white_check_mark: RN03: o apetite finaceiro do jogador deve ser, somente, de três tipos. São eles:
 
-    1. INDIFERENTE: o valor da oferta deve ser de, no mínimo, o mesmo o valor do seu preço.
+    0. INDIFERENTE: o valor da oferta deve ser de, no mínimo, o mesmo o valor do seu preço.
     
-    2. CONSERVADOR: o valor da oferta deve ser de, no mínimo, 40% acima do seu preço.
+    1. CONSERVADOR: o valor da oferta deve ser de, no mínimo, 40% acima do seu preço.
     
-    3. MERCENARIO: o valor da oferta deve ser de, no mínimo, 80% acima do seu preço.
+    2. MERCENARIO: o valor da oferta deve ser de, no mínimo, 80% acima do seu preço.
 
-RN04: o jogador deve possuir um método que, dado um clube de entrada, retorne uma informação que determine se o jogador possui interesse em ser transferido para o clube em questão e, por padrão, o jogador só deve estar interessado em jogar por um clube que tenha uma reputação histórica de, no mínimo, 1 ponto.
+:white_check_mark: RN04: o jogador deve possuir um método que, dado um clube de entrada, retorne uma informação que determine se o jogador possui interesse em ser transferido para o clube em questão e, por padrão, o jogador só deve estar interessado em jogar por um clube que tenha uma reputação histórica de, no mínimo, 1 ponto.
 
 :white_check_mark: RN06: o jogador deve possuir um método que retorna o seu valor de compra e, por padrão, o cálculo do valor de compra do jogador retorna o seu preço acrescido pelo percentual correspondente ao seu apetite financeiro.
 
-RN07: o jogador deve possuir um método para transferencia de clube que, por consequencia, irá atualizar seu clube atual.
+:white_check_mark: RN07: o jogador deve possuir um método para transferencia de clube que, por consequencia, irá atualizar seu clube atual.
 
 #### Tipos de Jogador
 
@@ -83,11 +83,11 @@ _Regras de Negócio do Lateral_
 
 _Regras de Negócio do Atacante_
 
-RN16: o atacante deve possuir a informação da quantidade de gols feitos no ano.
+:white_check_mark: RN16: o atacante deve possuir a informação da quantidade de gols feitos no ano.
 
-RN17: o cálculo do valor de compra do atacante tem um acréscimo de 1% para cada gol sobre o valor do calculo padrão (RN06).
+:white_check_mark: RN17: o cálculo do valor de compra do atacante tem um acréscimo de 1% para cada gol sobre o valor do calculo padrão (RN06).
 
-RN18: o cálculo do valor de compra do atacante tem um desconto de 25% sobre o valor do calculado e com os acréscimos (RN18), mas apenas para atletas com mais de 30 anos.
+:white_check_mark: RN18: o cálculo do valor de compra do atacante tem um desconto de 25% sobre o valor do calculado e com os acréscimos (RN18), mas apenas para atletas com mais de 30 anos.
 
 RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
 
