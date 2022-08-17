@@ -4,12 +4,12 @@ import clube.Clube;
 
 public class Jogador {
 
-    public String nome;
-    public int idade;
-    public Clube clubeAtual;
-    public int reputacaoHistorica;
-    public int apetiteFinanceiro;
-    public double preco;
+    private String nome;
+    private int idade;
+    protected Clube clubeAtual;
+    private int reputacaoHistorica;
+    private int apetiteFinanceiro;
+    private double preco;
 
     Clube semClube = new Clube("_Sem Clube_", 0, 0);
 

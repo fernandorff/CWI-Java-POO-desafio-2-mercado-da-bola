@@ -16,7 +16,7 @@ public class Atacante extends Jogador{
     public double getValorDeMercado() {
         // RN17: o cálculo do valor de compra do atacante tem um acréscimo de 1% para cada gol sobre o valor do calculo padrão (RN06).
         // RN18: o cálculo do valor de compra do atacante tem um desconto de 25% sobre o valor do calculado e com os acréscimos (RN18), mas apenas para atletas com mais de 30 anos.
-        if (idade > 30){
+        if (this.getIdade() > 30){
             return (this.getPrecoComBonusDeApetiteFinanceiro() + (this.getPrecoComBonusDeApetiteFinanceiro()*golsMarcadosNoAno/100))*0.75;
         }
         return this.getPrecoComBonusDeApetiteFinanceiro() + (this.getPrecoComBonusDeApetiteFinanceiro()*golsMarcadosNoAno/100);
@@ -25,7 +25,7 @@ public class Atacante extends Jogador{
 
     public boolean interesseEmSerVendidoParaOClube(Clube clube) {
         // RN19: atancante tem interesse em mudar de clube somente quando a reputação histórica do clube é maior que a sua.
-        if (clube.reputacaoHistorica > this.reputacaoHistorica) {
+        if (clube.reputacaoHistorica > this.getReputacaoHistorica()) {
             return true;
         }
         return false;
