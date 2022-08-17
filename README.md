@@ -43,9 +43,9 @@ RN07: o jogador deve possuir um método para transferencia de clube que, por con
 
 _Regras de Negócio do Goleiro_
 
-**(IMPLEMENTADO)** RN08: o goleiro deve possuir a informação da quantidade de penaltis defendidos no ano.
+**(IMPLEMENTADO)** - [x] RN08: o goleiro deve possuir a informação da quantidade de penaltis defendidos no ano.
 
-**(IMPLEMENTADO)** RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
+**(IMPLEMENTADO)** - [x] RN09: o cálculo do valor de compra do goleiro tem um acréscimo de 4% para cada penalti defendido sobre o valor do calculo padrão (RN06).
 
 ##### Zagueiro
 
