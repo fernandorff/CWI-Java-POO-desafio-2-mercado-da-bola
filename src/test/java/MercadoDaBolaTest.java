@@ -92,14 +92,6 @@ public class MercadoDaBolaTest {
     }
 
     @Test
-    public void lateralTest(){
-
-        Lateral lateral = new Lateral("Roberto Carlos",31,null,5,1,1000,10);
-
-        Assert.assertEquals(1176,lateral.getValorDeMercado(),0.01);
-    }
-
-    @Test
     public void jogadorTest(){
 
         Clube clube = new Clube("Vasco",15,10000);
@@ -109,8 +101,24 @@ public class MercadoDaBolaTest {
         Assert.assertEquals(10,clube.getReputacaoHistorica());
         Assert.assertEquals(10,zagueiro.getReputacaoHistorica());
         Assert.assertEquals(2,zagueiro.getApetiteFinanceiro());
+        Assert.assertEquals("Cafu",zagueiro.getNome());
+        Assert.assertEquals(1800,zagueiro.getValorDeMercado(),0.01);
 
+        MeioCampo meioCampo = new MeioCampo("Ronaldo",29,null,8,1,1000);
 
+        // meio campo so tem interesse em times com reputacao menos 2 ou mais que a sua.
+        clube.setReputacaoHistorica(6);
+        Assert.assertTrue(meioCampo.interesseEmSerVendidoParaOClube(clube));
+
+        Atacante atacante = new Atacante("Rivaldo",25,null,4,1,1000,10);
+
+        Assert.assertTrue(atacante.interesseEmSerVendidoParaOClube(clube));
+        Assert.assertEquals(10,atacante.getGolsMarcadosNoAno());
+
+        Lateral lateral = new Lateral("Roberto Carlos",27,null,5,1,1000,10);
+
+        Assert.assertEquals(1680,lateral.getValorDeMercado(),0.01);
+        Assert.assertEquals(10,lateral.getCruzamentosCerteirosNoAno());
 
 
     }

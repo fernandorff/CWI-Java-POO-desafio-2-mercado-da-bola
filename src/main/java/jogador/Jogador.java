@@ -4,13 +4,14 @@ import clube.Clube;
 
 public class Jogador {
 
-    protected Clube clubeAtual;
-    Clube semClube = new Clube("_Sem Clube_", 0, 0);
+    private Clube clubeAtual;
     private String nome;
     private int idade;
     private int reputacaoHistorica;
     private int apetiteFinanceiro;
     private double preco;
+
+
 
     public Jogador(String nome, int idade, Clube clubeAtual, int reputacaoHistorica, int apetiteFinanceiro, int preco) {
 
@@ -106,6 +107,7 @@ public class Jogador {
     // RN01.: o jogador deve possuir um método que retorna o nome do clube que está atuando. Se o atleta estiver sem clube, deve retornar _Sem Clube_.
     public void setClubeAtual(Clube clubeAtual) {
         if (clubeAtual == null) {
+            Clube semClube = new Clube("_Sem Clube_", 0, 0);
             this.clubeAtual = semClube;
         } else {
             this.clubeAtual = clubeAtual;
