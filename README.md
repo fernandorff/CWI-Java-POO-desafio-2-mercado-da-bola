@@ -1,3 +1,7 @@
+### Code overview do SonarQube
+
+![image](https://user-images.githubusercontent.com/101672271/191229735-3d582315-b2cb-4aeb-b21d-6c49d934fbc7.png)
+
 # Mercado da Bola
 
 ![Arena](https://portoimagem.files.wordpress.com/2013/08/blog-grc3aamio-1903-c3a0-noite-a-arena-fica-ainda-mais-bela.jpg)
