@@ -2,11 +2,11 @@ package clube;
 
 public class Clube {
 
+    protected double saldoDisponivel;
     private String nome;
     private int reputacaoHistorica;
-    protected double saldoDisponivel;
 
-    public Clube (String nome, int reputacaoHistorica, double saldoDisponivel){
+    public Clube(String nome, int reputacaoHistorica, double saldoDisponivel) {
         this.setNome(nome);
         this.setSaldoDisponivel(saldoDisponivel);
         this.setReputacaoHistorica(reputacaoHistorica);
@@ -26,7 +26,7 @@ public class Clube {
 
     public void setReputacaoHistorica(int reputacaoHistorica) {
         // reputacao historica maxima = 10
-        this.reputacaoHistorica = Math.min(10,reputacaoHistorica);
+        this.reputacaoHistorica = Math.min(10, reputacaoHistorica);
     }
 
     public double getSaldoDisponivel() {
